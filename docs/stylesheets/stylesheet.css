@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+body {
+    background: var(--color-dark);
+    color: var(--color-light);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong, h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--bold);
+}
+
+strong.extra {
+    font-weight: var(--extra-bold);
+}
+
+section {
+    padding: 32px 64px;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.splash {
+    font-family: Rubik;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.background-logo-wrapper {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 500vh;
+    overflow-x: hidden;
+}
+
+.background-logo {
+    width: 400vh;
+    margin-left: -200vh;
+    animation: spin;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.background-logo path {
+    fill: #1f1f1f;
+}
+
+.logo {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    text-align: right;
+}
+
+.logoRak {
+    width: 100%;
+}
+
+.logo-subtitle {
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin-top: -16px;
+}
+
+.splash-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.splash-body-text {
+    margin-right: auto;
+}
+
+.splash-super-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    height: 2.4em;
+    line-height: 1.2em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.splash-super-title {
+    transition: transform 0.1s;
+}
+
+.splash-super-title.switch {
+    transform: scale(1, 0);
+}
+
+.splash-title {
+    font-size: 128px;
+    line-height: 1em;
+    font-weight: var(--extra-bold);
+}
+
+.splash-subtitle {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.splash-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.splash-scroll-down {
+    font-size: 32px;
+    padding: 20px;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-name: hover;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes hover {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, 16px);
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .splash-body,
+    .info,
+    .pricing,
+    .storage {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .splash-footer {
+        display: none;
+    }
+
+    .background-logo {
+        margin-left: -300vh;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 32px 16px;
+    }
+
+    section:not(.splash):not(.footer) {
+        padding: 64px 16px;
+    }
+
+    .splash-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .splash-title {
+        font-size: 64px;
+        line-height: 1.2em;
+    }
+
+    .splash-super-title,
+    .splash-subtitle {
+        font-size: 18px;
+    }
+
+    .splash-super-title {
+        margin-bottom: 6px;
+    }
+
+    .splash-subtitle {
+        margin-top: 8px;
+    }
+}
