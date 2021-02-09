@@ -35,7 +35,11 @@ $(document).ready(function () {
         window.open("https:/github.com/raklaptudirm/", "_self")
     });
 
+    $('.about-source').click(function () {
+        window.open("https:/github.com/raklaptudirm/raklaptudirm.github.io/", "_self")
+    });
+
     $('.logo').click(function () {
-        window.open("https:/raklaptudirm.github.io/index.html", "_self")
+        window.open("https:/raklaptudirm.github.io/", "_self")
     });
 })

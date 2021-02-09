@@ -322,5 +322,19 @@ section {
 }
 
 .button-pad {
-    padding: 3px;
+    padding: 4px;
+}
+
+.but {
+    padding: 20px;
+}
+
+.blog {
+    font-family: Hammersmith One;
+    font-size: 30px;
+}
+
+.para {
+    text-align: left;
+    padding: 10px;
 }
