@@ -29,3 +29,11 @@ $('.splash-scroll-down').click(function () {
         'top': window.innerHeight
     });
 });
+
+$('.splash-scroll-down').mouseenter(function () {
+    document.querySelector('.splash-scroll-down').classList.add('inter');
+});
+
+$('.splash-scroll-down').mouseleave(function () {
+    document.querySelector('.splash-scroll-down').classList.remove('inter');
+});

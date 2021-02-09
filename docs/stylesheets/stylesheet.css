@@ -162,7 +162,7 @@ section {
     }
 
     to {
-        transform: translate(0, 16px);
+        transform: translate(0, 6px);
     }
 }
 
@@ -266,20 +266,35 @@ section {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0000;
+  background: #000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: #aaa;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #888;
+}
+
+.inter {
+    animation-duration: 0.5s;
+    animation-name: grow;
+}
+
+@keyframes grow {
+    from {
+        font-size: 40px;
+        color: #fff;
+    } to {
+        font-size: 45px;
+        color: #888;
+    }
 }
