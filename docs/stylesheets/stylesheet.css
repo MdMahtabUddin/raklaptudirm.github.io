@@ -298,3 +298,7 @@ section {
         color: #888;
     }
 }
+
+.lock {
+    overflow: hidden;
+}
