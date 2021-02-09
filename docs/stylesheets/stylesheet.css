@@ -284,21 +284,43 @@ section {
   background: #888;
 }
 
-.inter {
-    animation-duration: 0.5s;
-    animation-name: grow;
+.splash-scroll-down {
+    transition-duration: 0.4s;
 }
 
-@keyframes grow {
-    from {
-        font-size: 40px;
-        color: #fff;
-    } to {
-        font-size: 45px;
-        color: #888;
-    }
+.splash-scroll-down:hover {
+    font-size: 45px;
+    color: #888;
 }
 
 .lock {
     overflow: hidden;
+}
+
+.home {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  padding: 15px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: Hammersmith One;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.button {
+    text-align: center;
+}
+
+.home:hover {
+    color: #fff;
+    background-color: #000;
+    color: white;
+}
+
+.button-pad {
+    padding: 3px;
 }

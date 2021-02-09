@@ -22,18 +22,20 @@ function showNextTitle() {
     }, 120);
 }
 
-$('.splash-scroll-down').click(function () {
-    window.scrollTo({
-        'behavior': 'smooth',
-        'left': 0,
-        'top': window.innerHeight
+$(document).ready(function () {
+    $('.splash-scroll-down').click(function () {
+        window.scrollTo({
+            'behavior': 'smooth',
+            'left': 0,
+            'top': window.innerHeight
+        });
     });
-});
 
-$('.splash-scroll-down').mouseenter(function () {
-    document.querySelector('.splash-scroll-down').classList.add('inter');
-});
+    $('.about-but').click(function () {
+        window.open("https:/github.com/raklaptudirm/", "_self")
+    });
 
-$('.splash-scroll-down').mouseleave(function () {
-    document.querySelector('.splash-scroll-down').classList.remove('inter');
-});
+    $('.logo').click(function () {
+        window.open("https:/raklaptudirm.github.io/index.html", "_self")
+    });
+})
