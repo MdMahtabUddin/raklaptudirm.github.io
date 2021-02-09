@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 * {
     padding: 0;
@@ -141,13 +142,18 @@ section {
 }
 
 .splash-scroll-down {
-    font-size: 32px;
+    font-size: 40px;
     padding: 20px;
+    padding-bottom: 10px;
     cursor: pointer;
     animation-duration: 2s;
     animation-name: hover;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.fal {
+    content: "\2B9B";
 }
 
 @keyframes hover {
@@ -212,4 +218,68 @@ section {
     .splash-subtitle {
         margin-top: 8px;
     }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    font-family: Hammersmith One;
+}
+
+.info-text {
+    margin-right: auto;
+}
+
+.info-games {
+    text-align: right;
+}
+
+.info-info:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.info-title {
+    font-size: 64px;
+    font-weight: var(--bold);
+    line-height: 1.3em;
+}
+
+.info-game {
+    font-size: 48px;
+    font-weight: var(--bold);
+    border-radius: 2px;
+}
+
+.info-game:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.info-game-software {
+    margin-top: -8px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.inter-yes {
+    font-size: 120%;
+} 
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
