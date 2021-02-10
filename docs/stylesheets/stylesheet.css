@@ -402,3 +402,18 @@ blockquote span{
     color: #fff;
     background-color: #000;
 }
+
+footer {
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+    padding-top: 50px;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links > a{
+    margin-right: 20px;
+}
