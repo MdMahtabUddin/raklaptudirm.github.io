@@ -290,7 +290,6 @@ section {
 }
 
 .splash-scroll-down:hover {
-    font-size: 45px;
     color: #888;
 }
 
@@ -379,7 +378,7 @@ blockquote span{
   margin-top:1em;
 }
 
-.fas {
+.fas, .fab {
     color: inherit;
 }
 
@@ -406,8 +405,6 @@ blockquote span{
 footer {
     text-align: center;
     font-size: 50px;
-    padding: 5px;
-    padding-top: 50px;
 }
 
 .footer-links {
@@ -416,4 +413,13 @@ footer {
 
 .footer-links > a{
     margin-right: 20px;
+}
+
+.link {
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.link:hover {
+    color: #888;
 }
